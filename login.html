@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>EntrGo</title>
+  <script src="main.js"></script>
   <link rel="stylesheet" href="main.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,7 +14,7 @@
   <div class="login-container">
     <h1 class="login-title">EntreGO</h1>
     
-    <form class="login-form">
+    <form class="login-form" id="login-form">
       <!-- Campo Usuário -->
       <div class="form-group">
         <label for="user" class="form-label">Usuário *</label>
@@ -30,9 +31,10 @@
       <div class="forgot-password">
         <a href="#">Esqueceu sua senha?</a>
       </div>
-      
+      <div id="mensagemLogin"></div>
       <!-- Botão "Entrar" -->
-      <button type="submit" class="login-button">Entrar</button>
+      <button type="submit" class="login-button" id="login-button" onclick="fazerLogin()">Entrar</button>
+      
     </form>
     
     <!-- Rodapé -->
