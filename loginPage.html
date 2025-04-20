@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EntrGo</title>
+    <script src="main.js"></script>
+    <link rel="stylesheet" href="main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="login-container">
+      <h1 class="login-title">EntreGO</h1>
+
+      <form class="login-form" id="login-form">
+        <!-- Campo Usuário -->
+        <div class="form-group">
+          <label for="user" class="form-label">Usuário *</label>
+          <input
+            type="text"
+            id="user"
+            class="form-input"
+            placeholder="Digite seu usuário"
+          />
+        </div>
+
+        <!-- Campo Senha -->
+        <div class="form-group">
+          <label for="password" class="form-label">Senha *</label>
+          <input
+            type="password"
+            id="password"
+            class="form-input"
+            placeholder="Digite sua senha"
+          />
+        </div>
+
+        <!-- Link "Esqueceu sua senha?" -->
+        <div class="forgot-password">
+          <a href="/resetPassword.html">Esqueceu sua senha?</a>
+        </div>
+        <div id="mensagemLogin"></div>
+        <!-- Botão "Entrar" -->
+        <button
+          type="submit"
+          class="login-button"
+          id="login-button"
+          onclick="fazerLogin()"
+        >
+          Entrar
+        </button>
+      </form>
+
+      <!-- Rodapé -->
+      <div class="footer">
+        <p>Não tem conta? <a href="/createAccount.html">Clique aqui</a></p>
+      </div>
+    </div>
+  </body>
+</html>
